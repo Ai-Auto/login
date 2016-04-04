@@ -1,0 +1,35 @@
+<!doctype html>
+<html ng-app="todoApp">
+
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="js/todo.js"></script>
+  <link rel="stylesheet" href="css/todo.css">
+</head>
+
+<body ng-controller="TodoListController as todoList">
+  <!-- {{todoList.title}} -->
+  <div id="warp">
+    Monotone Admin Login CSS
+    <form action="" id="formu">
+      <div class="admin">
+        <div class="rota">
+          <h1>ADMIN</h1>
+          <input id="username" type="text" name="name" value="" placeholder="Username" />
+          <br />
+          <input id="password" type="password" name="pass" value="" placeholder="Password" />
+        </div>
+      </div>
+      <div class="cms">
+        <div class="roti">
+          <h1>NET</h1>
+          <button id="valid" type="button" name="valid">Login</button>
+          <br />
+          <p><a href="#">Register</a> <a href="#">Forgot Password</a> <a href="#">Help</a></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
