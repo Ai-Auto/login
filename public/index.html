@@ -7,23 +7,22 @@
   <link rel="stylesheet" href="css/todo.css">
 </head>
 
-<body ng-controller="TodoListController as todoList">
-  <!-- {{todoList.title}} -->
+<body ng-controller="MyController">
   <div id="warp">
-    Monotone Admin Login CSS
+    {{title}}
     <form action="" id="formu">
       <div class="admin">
         <div class="rota">
           <h1>ADMIN</h1>
-          <input id="username" type="text" name="name" value="" placeholder="Username" />
+          <input id="username" type="text" ng-model="input.username" value="" placeholder="Username" />
           <br />
-          <input id="password" type="password" name="pass" value="" placeholder="Password" />
+          <input id="password" type="password" ng-model="input.password" value="" placeholder="Password" />
         </div>
       </div>
       <div class="cms">
         <div class="roti">
           <h1>NET</h1>
-          <button id="valid" type="button" name="valid">Login</button>
+          <button id="valid" type="button" ng-click="login(input)">Login</button>
           <br />
           <p><a href="#">Register</a> <a href="#">Forgot Password</a> <a href="#">Help</a></p>
         </div>
