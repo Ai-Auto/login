@@ -6,8 +6,7 @@ angular.module('todoApp', [])
     $interval(function () {
       app.time = moment(new Date()).format('LTS')
     }, 10)
-    app.login = function (input) {
-      console.log(input.username, input.password)
-    // save(input)
+    app.login = function (input, time) {
+      console.log(input.username, input.password, time)
     }
   })
