@@ -1,5 +1,6 @@
 /* global angular*/
 angular.module('todoApp', [])
-  .controller('MyController', function ($scope) {
-    $scope.title = 'Login Page Wifi'
+  .controller('MyController', function () {
+    var app = this
+    app.title = 'Login Page Wifi'
   })
