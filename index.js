@@ -6,6 +6,9 @@ mongoose.connect('mongodb://localhost/fitm')
 app.use(express.static('public'))
 app.use(bodyParser.json())
 
+var login = require('./models/login/login.route.js')
+app.use('/', login)
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('port', (process.env.PORT || 5000))
 
