@@ -13,7 +13,7 @@
       }
     })
   })
-  router.post('/api/fitm', function (req, res, next) {
+  router.post('/api/register', function (req, res, next) {
     var obj = new Model(req.body)
     obj.save(function (err, obj) {
       if (err) {
